@@ -1,12 +1,17 @@
 package ;
 
+import jsfl.Document;
 import jsfl.Flash;
 
 class Linkage {
-	public function new(forFlashContents:Bool){
+	public static function main(){
+		new Linkage();
+	}
+	public function new(){
 
 		Flash.trace("---");
 
+		var isHtml5CanvasContents = Flash.getDocumentDOM().exportPublishProfileString().indexOf("JavaScript/HTML") != -1;
 		var library = Flash.getDocumentDOM().library;
 		var items = library.getSelectedItems();
 		var itemsLength = items.length;
@@ -27,11 +32,10 @@ class Linkage {
 
 			item.linkageExportForAS = true;
 
-			if(forFlashContents){
+			if(!isHtml5CanvasContents){
 				item.linkageExportInFirstFrame = true;
 				item.linkageIdentifier = linkageIdentifier;
 			}
-			//HTML5 Canvas
 			else{
 				item.linkageClassName = linkageIdentifier;
 			}

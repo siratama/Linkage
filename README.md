@@ -3,12 +3,12 @@ Linkage
 
 This is a jsfl file which sets up and cancels a linkage setup by package to each symbol in the selected folder.
 
-Flash CC ライブラリ内、選択したフォルダ内の 各シンボルに対し、リンケージ設定を一括で設定・解除する JSFL を配置しています。HTML5 Canvas ドキュメント向け JSFL も用意しています。
+Flash CC ライブラリ内、選択したフォルダ内の 各シンボルに対し、リンケージ設定を一括で設定・解除する JSFL を配置しています。
+HTML5 Canvas ドキュメントにも対応しています。
 
 ## Download
 
-* [LinkageForFlash.jsfl](https://raw.github.com/siratama/Linkage/master/download/LinkageForFlash.jsfl)
-* [LinkageForHTML5Canvas.jsfl](https://raw.github.com/siratama/Linkage/master/download/LinkageForHTML5Canvas.jsfl)
+* [LinkageForFlash.jsfl](https://raw.github.com/siratama/Linkage/master/download/Linkage.jsfl)
 * [LinkageCancel.jsfl](https://raw.github.com/siratama/Linkage/master/download/LinkageCancel.jsfl)
 * [JSFLSetsDirectoryChecker.jsfl (option)](https://raw.github.com/siratama/Linkage/master/download/JSFLSetsDirectoryChecker.jsfl)
 
@@ -32,8 +32,7 @@ Please locate each jsfl file as follows.
 
 	Configuration/
 	　└ Commands/
-	　　　├ LinkageForFlash.jsfl
-	　　　├ LinkageForHTML5Canvas.jsfl
+	　　　├ Linkage.jsfl
 	　　　└ LinkageCancel.jsfl
 
 LinkageForFlash, LinkageForHTML5Canvas, LinkageCancel is displayed in a command menu by placing it definitely.

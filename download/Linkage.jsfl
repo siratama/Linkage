@@ -1,6 +1,7 @@
 (function () { "use strict";
-var Linkage = function(forFlashContents) {
+var Linkage = function() {
 	fl.trace("---");
+	var isHtml5CanvasContents = fl.getDocumentDOM().exportPublishProfileString().indexOf("JavaScript/HTML") != -1;
 	var library = fl.getDocumentDOM().library;
 	var items = library.getSelectedItems();
 	var itemsLength = items.length;
@@ -17,16 +18,15 @@ var Linkage = function(forFlashContents) {
 		var symbolName = pathNames[pathNames.length - 1];
 		var linkageIdentifier = pathNames.join(".");
 		item.linkageExportForAS = true;
-		if(forFlashContents) {
+		if(!isHtml5CanvasContents) {
 			item.linkageExportInFirstFrame = true;
 			item.linkageIdentifier = linkageIdentifier;
 		} else item.linkageClassName = linkageIdentifier;
 		fl.trace(linkageIdentifier);
 	}
 };
-var LinkageForFlash = function() { }
-LinkageForFlash.main = function() {
-	new Linkage(true);
+Linkage.main = function() {
+	new Linkage();
 }
-LinkageForFlash.main();
+Linkage.main();
 })();
