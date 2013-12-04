@@ -3,7 +3,7 @@ Linkage
 
 This is a jsfl file which sets up and cancels a linkage setup by package to each symbol in the selected folder.
 
-選択したフォルダ内の各シンボルに対し、リンケージ設定を一括で設定・解除する JSFL です。HTML5 Canvas ドキュメント向け JSFL も用意しています。
+Flash CC ライブラリ内、選択したフォルダ内の 各シンボルに対し、リンケージ設定を一括で設定・解除する JSFL を配置しています。HTML5 Canvas ドキュメント向け JSFL も用意しています。
 
 ## Download
 
