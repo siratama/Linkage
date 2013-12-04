@@ -1,0 +1,19 @@
+-js download/LinkageForFlash.jsfl
+-main LinkageForFlash
+-cp src
+-lib jsfl
+
+--next
+
+-js download/LinkageForHTML5Canvas.jsfl
+-main LinkageForHTML5Canvas
+-cp src
+-lib jsfl
+
+--next
+
+-js download/LinkageCancel.jsfl
+-main LinkageCancel
+-cp src
+-lib jsfl
+
