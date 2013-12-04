@@ -8,7 +8,7 @@ HTML5 Canvas ドキュメントにも対応しています。
 
 ## Download
 
-* [LinkageForFlash.jsfl](https://raw.github.com/siratama/Linkage/master/download/Linkage.jsfl)
+* [Linkage.jsfl](https://raw.github.com/siratama/Linkage/master/download/Linkage.jsfl)
 * [LinkageCancel.jsfl](https://raw.github.com/siratama/Linkage/master/download/LinkageCancel.jsfl)
 * [JSFLSetsDirectoryChecker.jsfl (option)](https://raw.github.com/siratama/Linkage/master/download/JSFLSetsDirectoryChecker.jsfl)
 
