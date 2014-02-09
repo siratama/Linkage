@@ -1,0 +1,16 @@
+body{
+    background-color: #454545;
+}
+.button {
+	margin: 0 auto;
+}
+button{
+    width: 70px;
+    color: #d7d7d7;
+    font-size: 11px;
+    border: 1px solid #151515;
+    background: -webkit-linear-gradient(top, #535353, #3e3e3e);
+}
+button:hover{
+    background: -webkit-linear-gradient(top, #636363, #4e4e4e);
+}

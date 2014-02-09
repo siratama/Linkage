@@ -9,7 +9,9 @@ class LinkageCancel {
 
 	public function new(){
 
+		if(Flash.getDocumentDOM() == null) return;
 		Flash.trace("---");
+
 		var library = Flash.getDocumentDOM().library;
 		var items = library.getSelectedItems();
 		var itemsLength = items.length;

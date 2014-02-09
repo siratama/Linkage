@@ -1,12 +1,34 @@
 -js download/Linkage.jsfl
 -main Linkage
 -cp src
--lib jsfl
+-cp ../../hxclasses
+
+--next
+
+-js extension_content/Linkage.jsfl
+-main Linkage
+-cp src
+-cp ../../hxclasses
 
 --next
 
 -js download/LinkageCancel.jsfl
 -main LinkageCancel
 -cp src
--lib jsfl
+-cp ../../hxclasses
 
+--next
+
+-js extension_content/LinkageCancel.jsfl
+-main LinkageCancel
+-cp src
+-cp ../../hxclasses
+
+--next
+
+-js extension_content/index.js
+-main ExtensionIndex
+-cp src
+-cp ../../hxclasses
+-cp ../../haxelib/adobe_extension
+-lib jQueryExtern

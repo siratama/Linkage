@@ -9,6 +9,7 @@ class Linkage {
 	}
 	public function new(){
 
+		if(Flash.getDocumentDOM() == null) return;
 		Flash.trace("---");
 
 		var isHtml5CanvasContents = Flash.getDocumentDOM().exportPublishProfileString().indexOf("JavaScript/HTML") != -1;
