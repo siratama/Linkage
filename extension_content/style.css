@@ -1,5 +1,6 @@
 body{
     background-color: #454545;
+    overflow: hidden;
 }
 .button {
 	margin: 0 auto;

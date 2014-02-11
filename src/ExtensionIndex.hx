@@ -2,7 +2,7 @@ package ;
 import flash_extension.csinterface.CSInterfaceUtil;
 import jQuery.JQuery;
 import js.Browser;
-import jsfl.Flash;
+
 class ExtensionIndex {
 
 	private var csInterfaceUtil:CSInterfaceUtil;
