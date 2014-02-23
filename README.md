@@ -11,7 +11,7 @@ HTML5 Canvas ドキュメントにも対応しています。
 
 * [Linkage.zxp](https://raw.github.com/siratama/Linkage/master/download/Linkage.zxp)
 
-This can be used by Flash CC 13.1 or later. In the case of Windows, it can save from a right-click. [Adobe Extension Manager CC(Free)](http://www.adobe.com/jp/exchange/em_download/) is required in order to install. 
+This can be used by Flash CC 13.1 or later. In the case of Windows, it can save from a right-click. [Adobe Extension Manager CC(Free)](http://www.adobe.com/exchange/em_download/) is required in order to install.
 
 Flash CC 13.1 以降のバージョンで利用可能です。Windows の場合、右クリックから「リンク先のコンテンツを保存」を選択で保存できます。インストールには別途 [Adobe Extension Manager CC(無料)](http://www.adobe.com/jp/exchange/em_download/)が必要です。
 
