@@ -1,7 +1,8 @@
 package ;
 
+import jsfl.ItemType;
+import jsfl.Lib;
 import jsfl.Document;
-import jsfl.Flash;
 
 class Linkage {
 	public static function main(){
@@ -9,22 +10,22 @@ class Linkage {
 	}
 	public function new(){
 
-		if(Flash.getDocumentDOM() == null) return;
-		Flash.trace("---");
+		if(Lib.fl.getDocumentDOM() == null) return;
+		Lib.fl.trace("---");
 
-		var isHtml5CanvasContents = Flash.getDocumentDOM().exportPublishProfileString().indexOf("JavaScript/HTML") != -1;
-		var library = Flash.getDocumentDOM().library;
+		var isHtml5CanvasContents = Lib.fl.getDocumentDOM().exportPublishProfileString().indexOf("JavaScript/HTML") != -1;
+		var library = Lib.fl.getDocumentDOM().library;
 		var items = library.getSelectedItems();
 		var itemsLength = items.length;
 
 		if(itemsLength == 0){
-			Flash.trace("Select item in library.");
+			Lib.fl.trace("Select item in library.");
 			return;
 		}
 
 		for(i in 0...itemsLength){
 			var item = items[i];
-			if(item.itemType == "folder") continue;
+			if(item.itemType == ItemType.FOLDER) continue;
 
 			var pathNames = item.name.split("/");
 			var symbolName = pathNames[pathNames.length - 1];
@@ -41,7 +42,7 @@ class Linkage {
 				item.linkageClassName = linkageIdentifier;
 			}
 
-			Flash.trace(linkageIdentifier);
+			Lib.fl.trace(linkageIdentifier);
 		}
 	}
 }

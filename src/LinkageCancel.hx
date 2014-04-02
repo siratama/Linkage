@@ -1,6 +1,8 @@
 package ;
 
-import jsfl.Flash;
+import jsfl.ItemType;
+import jsfl.Lib;
+import jsfl.Lib.fl;
 
 class LinkageCancel {
 	public static function main(){
@@ -9,25 +11,27 @@ class LinkageCancel {
 
 	public function new(){
 
-		if(Flash.getDocumentDOM() == null) return;
-		Flash.trace("---");
+		if(Lib.fl.getDocumentDOM() == null) return;
+		Lib.fl.trace("---");
 
-		var library = Flash.getDocumentDOM().library;
+		var library = Lib.fl.getDocumentDOM().library;
 		var items = library.getSelectedItems();
 		var itemsLength = items.length;
 
 		if(itemsLength == 0){
-			Flash.trace("Select item in library.");
+			Lib.fl.trace("Select item in library.");
 			return;
 		}
 
 		for(i in 0...itemsLength){
 			var item = items[i];
-			if(item.itemType == "folder") continue;
+			if(item.itemType == ItemType.FOLDER) continue;
 
-			item.linkageClassName = "";
+			if(item.linkageClassName != null)
+				item.linkageClassName = "";
+
 			item.linkageExportForAS = false;
 		}
-		Flash.trace("finish");
+		Lib.fl.trace("finish");
 	}
 }

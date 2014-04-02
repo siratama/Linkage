@@ -1,34 +1,34 @@
 -js download/Linkage.jsfl
 -main Linkage
 -cp src
--cp ../../hxclasses
+-cp ../hxclasses
 
 --next
 
 -js extension_content/Linkage.jsfl
 -main Linkage
 -cp src
--cp ../../hxclasses
+-cp ../hxclasses
 
 --next
 
 -js download/LinkageCancel.jsfl
 -main LinkageCancel
 -cp src
--cp ../../hxclasses
+-cp ../hxclasses
 
 --next
 
 -js extension_content/LinkageCancel.jsfl
 -main LinkageCancel
 -cp src
--cp ../../hxclasses
+-cp ../hxclasses
 
 --next
 
 -js extension_content/index.js
 -main ExtensionIndex
 -cp src
--cp ../../hxclasses
--cp ../../haxelib/adobe_extension
+-cp ../hxclasses
+-cp H:\eclipse\workspace\MyHaxelib\haxelib\src\adobe_extension
 -lib jQueryExtern
