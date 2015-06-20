@@ -1,4 +1,5 @@
 (function () { "use strict";
+var $estr = function() { return js.Boot.__string_rec(this,''); };
 var ExtensionIndex = function() {
 	this.LINKAGE_CANSEL_JSFL = "LinkageCancel.jsfl";
 	this.LINKAGE_JSFL = "Linkage.jsfl";
