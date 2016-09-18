@@ -13,7 +13,11 @@ class Linkage {
 		if(Lib.fl.getDocumentDOM() == null) return;
 		Lib.fl.trace("---");
 
-		var isHtml5CanvasContents = Lib.fl.getDocumentDOM().exportPublishProfileString().indexOf("JavaScript/HTML") != -1;
+		var exportPublishProfileString:String = Lib.fl.getDocumentDOM().exportPublishProfileString();
+		var isHtml5CanvasDocument = exportPublishProfileString.indexOf("JavaScript/HTML") != -1;
+		var isWebGLDocument = exportPublishProfileString.indexOf("WebGL") != -1;
+		var isFlashDocument = !isHtml5CanvasDocument && !isWebGLDocument;
+
 		var library = Lib.fl.getDocumentDOM().library;
 		var items = library.getSelectedItems();
 		var itemsLength = items.length;
@@ -34,7 +38,7 @@ class Linkage {
 
 			item.linkageExportForAS = true;
 
-			if(!isHtml5CanvasContents){
+			if(isFlashDocument){
 				item.linkageExportInFirstFrame = true;
 				item.linkageIdentifier = linkageIdentifier;
 			}

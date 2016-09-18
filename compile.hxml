@@ -1,34 +1,28 @@
+-cp src
+-cp C:\HaxeToolkit\haxe\lib\haxe-jsfl\git
+--each
+
 -js download/Linkage.jsfl
 -main Linkage
--cp src
--cp C:\googledrive\workspace\haxelib\haxe-jsfl\jsfl\hxclasses
 
 --next
 
 -js extension_content/Linkage.jsfl
 -main Linkage
--cp src
--cp C:\googledrive\workspace\haxelib\haxe-jsfl\jsfl\hxclasses
 
 --next
 
 -js download/LinkageCancel.jsfl
 -main LinkageCancel
--cp src
--cp C:\googledrive\workspace\haxelib\haxe-jsfl\jsfl\hxclasses
 
 --next
 
 -js extension_content/LinkageCancel.jsfl
 -main LinkageCancel
--cp src
--cp C:\googledrive\workspace\haxelib\haxe-jsfl\jsfl\hxclasses
 
 --next
 
 -js extension_content/index.js
 -main ExtensionIndex
--cp src
--cp C:\googledrive\workspace\MyHaxelib\haxelib\src\adobe_extension
--cp C:\googledrive\workspace\haxelib\haxe-jsfl\jsfl\hxclasses
+-cp C:\googledrive\workspace\myhaxelib\trunk\src\adobe_extension
 -lib jQueryExtern
